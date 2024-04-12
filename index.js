@@ -1,5 +1,4 @@
 let div=document.querySelector("#box");
-console.log(div);
 let inp=document.createElement("input");
 div.appendChild(inp);
 inp.type="range"
@@ -9,13 +8,13 @@ let ballon = document.querySelector("#ballon");
 
 
 
-inp.onchange=addstar;
+inp.oninp=addstar;
 inp.value=0;
    
 function addstar( ) {
-    //ballon.removeChild(ballon.firstElementChild);
+
     let h1=document.createElement("h1");
-    inp.width='500%';
+    
 for (  let i =1;i<= this.value;i++) { 
     console.log(i);
     if (i==1) {
@@ -54,7 +53,7 @@ for (  let i =1;i<= this.value;i++) {
 
 ballon.appendChild(h1);
 
-console.log(ballon);
+
 
 
 
