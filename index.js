@@ -8,7 +8,7 @@ let ballon = document.querySelector("#ballon");
 
 
 
-inp.oninp=addstar;
+inp.oninput=addstar;
 inp.value=0;
    
 function addstar( ) {
